@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final | Alan Brance</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/images/logo.svg">
+</head>
+
+<body>
+    <noscript>
+        <p>Ups! Something went wrong with JavaScript :(</p>
+    </noscript>
+    <nav>
+        <a href="index.html">
+            <svg width="80" height="80" class="iconNav">
+                <rect class="pc1" x="8" y="8" width="64" height="40" rx="5" ry="5" fill="#3F6797" />
+                <polygon class="pc1" points="16 56, 64 56, 72 72, 8 72" fill="#3F6797" />
+                <rect class="pc2" x="12" y="12" width="56" height="32" rx="5" ry="5" fill="#B1D5E4" />
+                <polygon class="pc2" points="20 60, 60 60, 64 68, 16 68" fill="#B1D5E4" />
+            </svg>
+        </a>
+        <div id="menuDiv">
+            <a class="itemList" href="./history.html">HISTORIA</a>
+            <a class="itemList" href="./play.html">JUGUEMOS</a>
+        </div>
+    </nav>
+    <header>
+        <h1>JUGUEMOS UN POCO</h1>
+    </header>
+    <main id="mainPlay">
+        <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+        <div id="dropZone">
+            <div class="dropBox" id="db1">
+                <p>Arrastre y suelte la imagen aquí</p>
+            </div>
+            <div class="dropBox" id="db2">
+                <p>Arrastre y suelte la imagen aquí</p>
+            </div>
+            <div class="dropBox" id="db3">
+                <p>Arrastre y suelte la imagen aquí</p>
+            </div>
+        </div>
+        <div id="dragZone">
+            <img src="./assets/images/Rompe2.png" alt="pieza rompecabezas" class="puzzlePiece" id="pp1">
+            <img src="./assets/images/Rompe1.png" alt="pieza rompecabezas" class="puzzlePiece" id="pp2">
+            <img src="./assets/images/Rompe3.png" alt="pieza rompecabezas" class="puzzlePiece" id="pp3">
+        </div>
+        <button id="resetPuzzle" class="itemList" onclick="resetPuzzle()">Reiniciar</button>
+    </main>
+    <script src="./scripts/game.js"></script>
+</body>
+
+</html>

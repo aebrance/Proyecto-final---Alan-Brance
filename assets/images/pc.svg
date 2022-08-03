@@ -1,0 +1,6 @@
+<svg width="80" height="80">
+    <rect class="pc1" x="8" y="8" width="64" height="40" rx="5" ry="5" fill="#3F6797" />
+    <polygon class="pc1" points="16 56, 64 56, 72 72, 8 72" fill="#3F6797" />
+    <rect class="pc2" x="12" y="12" width="56" height="32" rx="5" ry="5" fill="#B1D5E4" />
+    <polygon class="pc2" points="20 60, 60 60, 64 68, 16 68" fill="#B1D5E4" />
+</svg>

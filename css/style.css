@@ -1,0 +1,316 @@
+* {
+    font-family: 'Monserrat', sans-serif;
+}
+
+body {
+    background: #427E80;
+    margin: 0px;
+}
+
+/* <---------- || INICIO NAV || -----> */
+nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconNav {
+    margin: 0px 0px 0px 40px;
+}
+
+#menuDiv {
+    height: 80%;
+    margin: 0px 40px 0px 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #154454;
+}
+
+a:nth-child(1) {
+    margin-right: 10px;
+}
+
+a:nth-child(2) {
+    margin-left: 10px;
+}
+
+a:nth-child(2):active {
+    margin-left: 13px;
+}
+
+.itemList {
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+    border-bottom: 3px solid #154454;
+    border-right: 3px solid #154454;
+}
+
+.itemList:active {
+    border: none;
+    color: #154454;
+}
+
+/* <---------- || FIN NAV || -----> */
+
+
+/* <---------- || INICIO HEADER || -----> */
+header {
+    width: 100%;
+    background-image: url("../assets/images/codigo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* <---------- || FIN HEADER || -----> */
+
+
+/* <---------- || INICIO MAIN || -----> */
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#mainPlay {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#mainHistory {
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.card {
+    background: white;
+    width: 310px;
+    height: 360px;
+    border: 5px solid #154454;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgCard {
+    width: 100%;
+}
+
+.txtCard {
+    text-align: center;
+}
+
+.linkCard {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #427E80;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 3px #154454;
+    text-align: center;
+    width: 40%;
+    margin-bottom: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.linkCard:active {
+    color: white;
+    box-shadow: none;
+}
+
+.txtHistory {
+    height: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 1% 7% 1% 7%;
+}
+
+main div:nth-child(3) {
+    grid-template-columns: 1fr 2fr;
+    height: 65%;
+}
+
+/* <--- || INICIO DE REPRODUCTOR || --->  */
+#videoPlayer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 7%;
+    margin-left: 7%;
+    padding: 5%;
+}
+
+video {
+    width: 80%;
+    height: 40%;
+    margin-bottom: 1%;
+}
+
+#videoControls {
+    background: #2D2D2D;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.bttnControls {
+    width: 7%;
+    height: 70%;
+    margin: 1%;
+}
+
+/* <--- || FIN DE REPRODUCTOR || --->  */
+
+/* <--- || INICIO DE JUEGO DE ROMPECABEZAS || ---> */
+#dropZone {
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0px;
+    border: 3px solid black;
+    margin: 20px 0px 20px 0px;
+}
+
+.dropBox {
+    background: grey;
+    width: 275px;
+    height: 400px;
+    text-align: center;
+    margin: 0px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#dragZone {
+    margin: 20px 0px 20px 0px;
+}
+
+#db3 {
+    height: 400px;
+}
+
+.puzzlePiece {
+    width: 275px;
+    height: 400px;
+}
+
+#resetPuzzle {
+    box-shadow: 2px 2px #154454;
+    border: 2px solid black;
+    color: #154454;
+    font-weight: 300;
+    padding: 10px 100px;
+}
+
+#resetPuzzle:active {
+    box-shadow: none;
+}
+
+/*  <--- || FIN DE JUEGO DE ROMPECABEZAS || --->  */
+
+/* <---------- || FIN MAIN || -----> */
+
+
+/* <---------- || INICIO FOOTER || -----> */
+footer {
+    background: #2D2D2D;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div {
+    margin: 0px 40px 0px 40px;
+    color: white;
+    text-align: center;
+}
+
+#contSVGFoot {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* <---------- || FIN FOOTER || -----> */
+
+
+/* <---------- || INICIO TÍTULOS || -----> */
+h1 {
+    background-color: #2D2D2D;
+    font-size: 50px;
+    color: white;
+    text-shadow: 5px 5px black;
+    padding: 5px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px #154454;
+    text-align: center;
+}
+
+/* <---------- || FIN TÍTULOS || -----> */
+
+
+/* <---------- || INICIO ANIMACIÓN || -----> */
+.pc1 {
+    animation: mover ease-in 1s;
+}
+
+.pc2 {
+    opacity: 0;
+    animation: mover ease-in 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mover {
+    0% {
+        opacity: 0;
+        transform: translate(0%, -50%);
+        transform-origin: 0 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0%, 0%);
+        transform-origin: 0 0;
+    }
+}
+
+/* <---------- || FIN ANIMACIÓN || -----> */
